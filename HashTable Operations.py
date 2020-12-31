@@ -283,6 +283,8 @@ execution_time = time.time() - initial_time
 directory = r"XXXX" #XXXX = File Directory
 with open(directory,"a") as dataset:
     dataset.write(f"\n{execution_time:.20f}")
+    
+hash_table.memory_usage()
 
 ------------------------------------------------------------
 
