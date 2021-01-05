@@ -192,7 +192,7 @@ Multiplicative Hash and Linear Probing
                     break
 
 ------------------------------------------------------------
-For insertion:
+For Insertion:
 
 hash_table = HashTableXXXX()
 
