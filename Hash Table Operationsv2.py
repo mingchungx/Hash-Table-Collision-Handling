@@ -212,7 +212,7 @@ initial_time = time.time()
 hash_table["lpvsch"] = True
 
 #Retrieving set here
-print(hash_table[keys[random.randint(0,len(keys))]])
+print(hash_table[keys[random.randint(0,len(keys)-1)]])
 
 execution_time = time.time() - initial_time
 
