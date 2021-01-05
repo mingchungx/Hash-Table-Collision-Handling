@@ -227,7 +227,7 @@ insert(hash_table)
 def retrieve(hash_table):
     global keys
     for key in keys:
-        print(key)
+        print(hash_table[key])
 
 initial_time = time.time()
 
