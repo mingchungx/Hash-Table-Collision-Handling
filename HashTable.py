@@ -122,6 +122,7 @@ directories = (
     r"/Users/mingchungxia/Desktop/IB Extended Essay Data/Version 3/MuLP Execution Time/LMuLP.csv",
 )
 
+#Execution Time
 for i, op in enumerate(operations):
 
     hash_table = HashTable(op[0],op[1],op[2])
@@ -139,3 +140,12 @@ for i, op in enumerate(operations):
         file.write(f"\n{insertion_time:.20f},{retrieval_time:.20f}")
     
     print(f"Completed {i} operation.")
+    
+#Memory Usage
+for i, op in enumerate(operations):
+
+    hash_table = HashTable(op[0],op[1],op[2])
+
+    insert(hash_table)
+
+    print(hash_table.memory_usage())
